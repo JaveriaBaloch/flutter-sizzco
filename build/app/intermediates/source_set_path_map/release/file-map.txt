@@ -1,0 +1,16 @@
+com.myapp.sizzco.sizzco.app-jetified-annotation-experimental-1.1.0-0 /Users/javeria/.gradle/caches/transforms-3/37081f5775e70cbdd20dc6397f05f75b/transformed/jetified-annotation-experimental-1.1.0/res
+com.myapp.sizzco.sizzco.app-core-1.6.0-1 /Users/javeria/.gradle/caches/transforms-3/4e5ad1fc7d9e260f5ffc15cd2d562d93/transformed/core-1.6.0/res
+com.myapp.sizzco.sizzco.app-jetified-window-java-1.0.0-beta04-2 /Users/javeria/.gradle/caches/transforms-3/51cd90743e70edfefbb6d06eb4f0965f/transformed/jetified-window-java-1.0.0-beta04/res
+com.myapp.sizzco.sizzco.app-jetified-window-1.0.0-beta04-3 /Users/javeria/.gradle/caches/transforms-3/880a66cf4ae8ae026fee2686f16a9f93/transformed/jetified-window-1.0.0-beta04/res
+com.myapp.sizzco.sizzco.app-main-4 /Users/javeria/Desktop/sizzco/android/app/src/main/res
+com.myapp.sizzco.sizzco.app-release-5 /Users/javeria/Desktop/sizzco/android/app/src/release/res
+com.myapp.sizzco.sizzco.app-pngs-6 /Users/javeria/Desktop/sizzco/build/app/generated/res/pngs/release
+com.myapp.sizzco.sizzco.app-resValues-7 /Users/javeria/Desktop/sizzco/build/app/generated/res/resValues/release
+com.myapp.sizzco.sizzco.app-rs-8 /Users/javeria/Desktop/sizzco/build/app/generated/res/rs/release
+com.myapp.sizzco.sizzco.app-mergeReleaseResources-9 /Users/javeria/Desktop/sizzco/build/app/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.myapp.sizzco.sizzco.app-mergeReleaseResources-10 /Users/javeria/Desktop/sizzco/build/app/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.myapp.sizzco.sizzco.app-merged_res-11 /Users/javeria/Desktop/sizzco/build/app/intermediates/merged_res/release
+com.myapp.sizzco.sizzco.app-packaged_res-12 /Users/javeria/Desktop/sizzco/build/babstrap_settings_screen/intermediates/packaged_res/release
+com.myapp.sizzco.sizzco.app-packaged_res-13 /Users/javeria/Desktop/sizzco/build/fluttertoast/intermediates/packaged_res/release
+com.myapp.sizzco.sizzco.app-packaged_res-14 /Users/javeria/Desktop/sizzco/build/path_provider_android/intermediates/packaged_res/release
+com.myapp.sizzco.sizzco.app-packaged_res-15 /Users/javeria/Desktop/sizzco/build/shared_preferences_android/intermediates/packaged_res/release
