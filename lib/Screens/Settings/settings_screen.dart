@@ -52,52 +52,52 @@ class _SettingScreenState extends State<SettingScreen> {
           child: ListView(
             children: [
               // User card
-              Container(
-                height: 150,
-                margin: EdgeInsets.all(20),
-                padding: EdgeInsets.all(20),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(30),
-                    color: Colors.white),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Container(
-                        width: 80,
-                        height: 80,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(30),
-                          child: Image.asset(
-                            "assets/avatarr.png",
-                            fit: BoxFit.cover,
-                          ),
-                        )),
-                    SizedBox(
-                      width: 20,
-                    ),
-                    username != null
-                        ? Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              PrimaryText(username!),
-                              SizedBox(
-                                height: 7,
-                              ),
-                              Text(email!)
-                            ],
-                          )
-                        : InkWell(
-                            child: PrimaryText("Click to Login"),
-                            onTap: () {
-                              Navigator.of(context).pushReplacement(
-                                  MaterialPageRoute(
-                                      builder: (_) => LoginScreen()));
-                            },
-                          )
-                  ],
-                ),
-              ),
+              // Container(
+              //   height: 150,
+              //   margin: EdgeInsets.all(20),
+              //   padding: EdgeInsets.all(20),
+              //   decoration: BoxDecoration(
+              //       borderRadius: BorderRadius.circular(30),
+              //       color: Colors.white),
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.start,
+              //     children: [
+              //       // Container(
+              //       //     width: 80,
+              //       //     height: 80,
+              //       //     child: ClipRRect(
+              //       //       borderRadius: BorderRadius.circular(30),
+              //       //       child: Image.asset(
+              //       //         "assets/avatarr.png",
+              //       //         fit: BoxFit.cover,
+              //       //       ),
+              //       //     )),
+              //       SizedBox(
+              //         width: 20,
+              //       ),
+              //       username != null
+              //           ? Column(
+              //               mainAxisAlignment: MainAxisAlignment.center,
+              //               crossAxisAlignment: CrossAxisAlignment.start,
+              //               children: [
+              //                 PrimaryText(username!),
+              //                 SizedBox(
+              //                   height: 7,
+              //                 ),
+              //                 Text(email!)
+              //               ],
+              //             )
+              //           : InkWell(
+              //               child: PrimaryText("Click to Login"),
+              //               onTap: () {
+              //                 Navigator.of(context).pushReplacement(
+              //                     MaterialPageRoute(
+              //                         builder: (_) => LoginScreen()));
+              //               },
+              //             )
+              //     ],
+              //   ),
+              // ),
               SettingsGroup(
                 settingsGroupTitle: "Info",
                 items: [
@@ -151,19 +151,19 @@ class _SettingScreenState extends State<SettingScreen> {
                 ],
               ),
               // You can add a settings title
-              username != null
-                  ? SettingsGroup(
-                      items: [
-                        SettingsItem(
-                          onTap: () {
-                            signOut();
-                          },
-                          icons: Icons.exit_to_app_rounded,
-                          title: "Sign Out",
-                        ),
-                      ],
-                    )
-                  : SizedBox(),
+              // username != null
+              //     ? SettingsGroup(
+              //         items: [
+              //           SettingsItem(
+              //             onTap: () {
+              //               signOut();
+              //             },
+              //             icons: Icons.exit_to_app_rounded,
+              //             title: "Sign Out",
+              //           ),
+              //         ],
+              //       )
+              //     : SizedBox(),
             ],
           ),
         ),
