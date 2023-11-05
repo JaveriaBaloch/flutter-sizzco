@@ -49,8 +49,9 @@ class GetProductsMethods {
 
   Future<List<WooCommerceProduct>> getProductsByCategories(String text) async {
     try {
+      print(text);
       final response = await http.get(Uri.parse(
-          'https://sizzco.com/wp-json/wc/v3/products?categories=$text&consumer_key=${Config().ck}&consumer_secret=${Config().cs}'));
+          'https://sizzco.com/wp-json/wc/v3/products/?category=$text&consumer_key=${Config().ck}&consumer_secret=${Config().cs}'));
       if (response.statusCode == 200) {
         final productListJson = jsonDecode(response.body) as List;
         List<WooCommerceProduct> fetchedProducts = productListJson

@@ -17,7 +17,7 @@ Widget SearchProducts(String text) {
         return Center(child: Text('Error: ${snapshot.error}'));
       } else {
         List<WooCommerceProduct> products = snapshot.data ?? [];
-        return Wrap(
+        return products.length!=0?Wrap(
           spacing: 5.0,
           runSpacing: 10.0,
           children: List.generate(products.length, (index) {
@@ -46,7 +46,10 @@ Widget SearchProducts(String text) {
               return Container();
             }
           }),
-        );
+        ):Center(
+          child: Image.asset('assets/empy.png'),
+        )
+        ;
       }
     },
   );

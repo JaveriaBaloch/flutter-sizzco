@@ -118,17 +118,16 @@ class _CartScreenState extends State<CartScreen> {
                                 backgroundColor: AppColors.getPrimaryColor(),
                               ),
                               onPressed: () {
-                                if (id != null) {
+
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
                                           builder: (_) => CheckoutScreen()));
-                                } else {
-                                  Fluttertoast.showToast(
-                                      msg: 'Please Login First');
-                                  Navigator.of(context).pushReplacement(
-                                      MaterialPageRoute(
-                                          builder: (_) => LoginScreen()));
-                                }
+                                  //
+                                  // Fluttertoast.showToast(
+                                  //     msg: 'Please Login First');
+                                  // Navigator.of(context).pushReplacement(
+                                  //     MaterialPageRoute(
+                                  //         builder: (_) => LoginScreen()));
                               },
                               child: Text("Checkout"),
                             ),

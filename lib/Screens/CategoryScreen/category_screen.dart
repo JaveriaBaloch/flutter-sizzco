@@ -58,15 +58,21 @@ class _CategoryScreenState extends State<CategoryScreen> {
                           spacing: 5.0,
                           // runSpacing: 10.0,
                           children:
-                              List.generate(snapshot.data!.length, (index) {
+                          List.generate(snapshot.data!.length, (index) {
                             final category = snapshot.data![index];
                             print(category.image?.src);
-                            return CategoryCard(
-                                category.image?.src.toString() ?? '',
-                                category.name ?? '',
-                                context,
-                                category.id.toString());
-                          }),
+                            if (category.name != "All Categories") {
+                              return CategoryCard(
+                                  category.image?.src.toString() ?? '',
+                                  category.name ?? '',
+                                  context,
+                                  category.id.toString());
+                            }
+                            else{
+                              return SizedBox();
+                            }
+                          }
+                          ),
                         );
                       }
                     },

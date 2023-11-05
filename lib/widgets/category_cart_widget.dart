@@ -8,7 +8,7 @@ InkWell CategoryCard(
     onTap: () {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
           builder: (_) => ProductByCategoryScreen(
-                text: title,
+                text: id,
               )));
     },
     child: Container(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as Flutter;
 import 'package:sizzco/APIServices/get_Products.dart';
 import 'package:sizzco/Models/products_model.dart';
+import 'package:sizzco/widgets/empty_collection.dart';
 
 import '../../widgets/bottomNav.dart';
 import '../../widgets/discounted_bar_widget.dart';
@@ -62,25 +63,25 @@ class _ProductByCategoryScreenState extends State<ProductByCategoryScreen> {
                           );
                         } else {
                           List<WooCommerceProduct> products =
-                              snapshot.data ?? [];
-                          return Wrap(
+                              snapshot!.data!;
+                          return products.length>0?Wrap(
                             alignment: WrapAlignment.center,
                             // spacing: 5.0, // Adjust the spacing between the items
                             // runSpacing: 10.0, // Adjust the run spacing
                             children: List.generate(products.length, (index) {
                               String discount = "";
                               final product = products[index];
-                              if (product.name != "Product" &&
-                                  product.regularPrice != null &&
-                                  product.price != null) {
+                              // if (product.name != "Product" &&
+                              //     product.regularPrice != null &&
+                              //     product.price != null) {
                                 discount = (100 -
                                         ((double.parse(product.price!) /
                                                 double.parse(
                                                     product.regularPrice!)) *
                                             100))
                                     .toStringAsFixed(0);
-                              }
-                              if (product.images != null &&
+                              // }
+                              if (
                                   product.images.isNotEmpty) {
                                 return SizedBox(
                                   width: 170,
@@ -100,7 +101,7 @@ class _ProductByCategoryScreenState extends State<ProductByCategoryScreen> {
                                 return SizedBox.shrink();
                               }
                             }),
-                          );
+                          ):NoItemFound(context);
                         }
                       },
                     )
