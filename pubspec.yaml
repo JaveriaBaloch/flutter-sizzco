@@ -16,7 +16,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 # In Windows, build-name is used as the major, minor, and patch parts
 # of the product and file versions while build-number is used as the build suffix.
-version: 1.0.1+2
+version: 2.0.2+2
 
 environment:
   sdk: '>=3.1.4 <4.0.0'
@@ -35,13 +35,20 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_paypal_package: ^0.0.5
+  flutter_paypal_payment: ^1.0.6
+  stripe_checkout: ^1.0.2
+  mailer: ^6.0.1
+  flutter_stripe: ^9.5.0+1
+#  dio: ^5.3.3
+#  flutter_paypal_payment: ^1.0.6
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  http: ^1.1.0
-  google_fonts: ^6.1.0
+  http: ^0.13.4
+  google_fonts: ^4.0.4
   json_annotation: ^4.8.1
   water_drop_nav_bar: ^2.2.0+5
   path_provider: ^2.1.1
@@ -49,7 +56,6 @@ dev_dependencies:
   shared_preferences: ^2.2.2
   fluttertoast: ^8.1.1
   flutter_toastr: ^1.0.3
-  dio: ^5.3.3
   rename: ^3.0.1
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -75,6 +81,9 @@ flutter:
     - assets/applogo.jpg
     - assets/img_1.png
     - assets/not_connecting.png
+    - assets/paypal.png
+    - assets/card_payment.png
+    - assets/icon.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

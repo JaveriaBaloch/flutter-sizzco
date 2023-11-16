@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		YCnxWh3DVptd0u+IjoPTZKPnPZI=
+		w1RCuF4sCoYxJNL/3fenpxXIoJI=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		CdwdfSAM2G5kAjyp13hQAzylNug=
+		9kpkmhtetv8JSmoV/y0immsbvRk=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		T0l83JG4E1kX5i4a9iRtC6YkwcA=
+		yW5T6pboZocKkzdW/INgYn/UCKQ=
 		</data>
 		<key>flutter_assets/assets/applogo.jpg</key>
 		<data>
@@ -32,9 +32,17 @@
 		<data>
 		ls+nYHXjibDURITrZmzjhyTLz84=
 		</data>
+		<key>flutter_assets/assets/card_payment.png</key>
+		<data>
+		w9kpOlB8/5tBG1TjJkU5fPAGcZU=
+		</data>
 		<key>flutter_assets/assets/empy.png</key>
 		<data>
 		wLUIa91k7ad0MydADQYVSCmRfLo=
+		</data>
+		<key>flutter_assets/assets/icon.png</key>
+		<data>
+		FVwQ/sBXQccZvDM6OqgrkXxFC2E=
 		</data>
 		<key>flutter_assets/assets/img.png</key>
 		<data>
@@ -48,6 +56,10 @@
 		<data>
 		r93O6LTupdEogoIINFF0GQLY654=
 		</data>
+		<key>flutter_assets/assets/paypal.png</key>
+		<data>
+		7GG4fpVY8valMXNSU+b1XaOy7IY=
+		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
 		/CUoTuPQqqdexfyOT9lpJhV+2MQ=
@@ -58,19 +70,31 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		v1NrKeLKFS4wNUkhGdA+tqI6jys=
+		ItO7xBdoniTp/QjL2J2/n5vQces=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
 		</data>
+		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
+		<data>
+		mBihw0DQ+fObskdvU/uJxi4GQ/4=
+		</data>
+		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html</key>
+		<data>
+		60RUAYYoUnETCwVvpgmbGYgxn8Q=
+		</data>
+		<key>flutter_assets/packages/flutter_paypal_package/lib/src/assets/img/cloud_state.png</key>
+		<data>
+		yzbn8ojc9H/RIZNhTYcp7AGpy6c=
+		</data>
 		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
 		<data>
-		HVkEhoid+n6bwOYCwZg4DdmGBHY=
+		w0yScZgyE5s0j7sPuGOLXy3ISfM=
 		</data>
 		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
 		<data>
-		v5LMft1C/Ps/+tw6D+zco3p3Urk=
+		gPIgba2QIn/qWmLFfVogsD4MxPU=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -87,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQAwH/AsWyZBXQcsZytqCq32Na9fXxDnHNiFbfQYPlE=
+			gmtRvK4jWlbSpzlnyRgC5O09W4GBdpIpFlQgwq5giDA=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bjSi6eb07fx6tdw/0+5/eOu4e+1Pf1qE0HKWDIfdFUY=
+			zu29hzjMSQAmEE6vC/CBOy+7TYLu2n16BcfdN852rKA=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -108,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B5zBTFLZP9VDaoNs62RVgCpGZg2tMTjd18Ki7CKjf9c=
+			rg/7icaXHUUOZffwW6QtNYHlQM49PZOhz8Ee01wDmGc=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/applogo.jpg</key>
@@ -125,11 +149,25 @@
 			m8qhkXg8U7StGffhz4Yj2exVUOVx/ZM1/1XrWqzDVIA=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/card_payment.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			c2ijNYmyx6sN9bzuTE1gaCwgIQHuIm0g2fgwtd+t4pI=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/empy.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			G8SA/KlMbjqIwEJpNQo1pe9Ipvbg1DL1eqO6SrY2yC4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/icon.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2JWctLT/WG+C4DL+En/+Pbp06RTH9Hu5XVWxQujKnCA=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/img.png</key>
@@ -153,6 +191,13 @@
 			8uzW8K/JJ8+1ksoDCL2zFVfFOPM3HyIEGlQ5ped/cT0=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/paypal.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			S3SiNuNisFiGPizhkwZLEVlJizJA64vMLvUdEPj7vvk=
+			</data>
+		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
@@ -171,7 +216,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3LNVPZQN4h4EKYsSqTFDtMOgj1cv5WHJqZA33/5Bs98=
+			SFPHp60tPiylK5cV/Tm9FX5YcMq2XvH8yMWOoOGj7MI=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -181,18 +226,39 @@
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LlYyIL2FXhHyMNwnoNby/VuDmimW+G7cgCWqtF5vpcM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3HLPwfHSpQE7ud40+MrPXiblQtfXE/y+CbhltKrKbd8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/flutter_paypal_package/lib/src/assets/img/cloud_state.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			///pKLQ7XJicaXxF2GhTjhlTaRCjBTrNoxa8wMZ/Sqo=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			abr0T+pbPv0zd7q8FU7xuDv4JjuRAgKox9bnRddRNJ8=
+			OA6cPd56JZLHb6TFMDSJcQW1dQpoPp1gk3TDCrW7kJY=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CRyacJlKIATuArBPER1Aq+QMB7BmhWOZ9YxYcELsKZA=
+			zYIrdfUdie9n3mKKElLvN1sxiImupJ++RP/PCwgqbb0=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>

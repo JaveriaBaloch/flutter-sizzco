@@ -5,6 +5,7 @@ import 'package:sizzco/Utilies/colors.dart';
 import 'package:sizzco/widgets/primaryText.dart';
 
 import '../../APIServices/checkout_api.dart';
+import '../../APIServices/stripe_service.dart';
 import '../../Models/AddressModels.dart';
 
 InkWell PaymentMethod(
@@ -19,13 +20,26 @@ InkWell PaymentMethod(
     TextEditingController country,
     TextEditingController postcode,
     TextEditingController phone,
-    BuildContext context
-    // List<LineItems> items,
-    // BuildContext context,
+    BuildContext context,
     ) {
   return InkWell(
     onTap: () async {
-      Billing billing = Billing(
+      if (method == "COD") {
+        if (_areTextControllersEmpty([
+          name,
+          email,
+          address,
+          city,
+          state,
+          country,
+          postcode,
+          phone,
+        ])) {
+          Fluttertoast.showToast(msg: 'All fields must be filled');
+          return;
+        }
+
+        Billing billing = Billing(
           firstName: name.text,
           lastName: "",
           address1: address.text,
@@ -35,8 +49,10 @@ InkWell PaymentMethod(
           country: country.text,
           email: email.text,
           phone: phone.text,
-          address2: '');
-      Shipping shipping = Shipping(
+          address2: '',
+        );
+
+        Shipping shipping = Shipping(
           firstName: name.text,
           lastName: "",
           address1: address.text,
@@ -45,16 +61,91 @@ InkWell PaymentMethod(
           postcode: postcode.text,
           country: country.text,
           email: email.text,
-          address2: '');
-      bool check =
-          await placeCashOnDeliveryOrder(method, title, billing, shipping);
-      if (check) {
-        Fluttertoast.showToast(msg: 'Order is successfully placed');
-        Navigator.of(context)
-            .pushReplacement(MaterialPageRoute(builder: (_) => HomeScreen()));
-      } else {
-        Fluttertoast.showToast(
-            msg: 'Failed to place the order. Please try again.');
+          phone: phone.text,
+          address2: '', // You may need to adjust this based on your requirements
+        );
+
+        bool check =
+        await placeOrder(method, title, billing, shipping,false);
+
+        if (check) {
+          Fluttertoast.showToast(msg: 'Order is successfully placed');
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (_) => HomeScreen()),
+          );
+        } else {
+          Fluttertoast.showToast(
+            msg: 'Failed to place the order. Please try again.',
+          );
+        }
+      } else if (method == "Online Payment") {
+        await StripeService.stripePaymentCheckout(
+          context: context,
+          mounted: true,
+          onSuccess: () async {
+            print("Success");
+            if (_areTextControllersEmpty([
+              name,
+              email,
+              address,
+              city,
+              state,
+              country,
+              postcode,
+              phone,
+            ])) {
+              Fluttertoast.showToast(msg: 'All fields must be filled');
+              return;
+            }
+
+            Billing billing = Billing(
+              firstName: name.text,
+              lastName: "",
+              address1: address.text,
+              city: city.text,
+              state: state.text,
+              postcode: postcode.text,
+              country: country.text,
+              email: email.text,
+              phone: phone.text,
+              address2: '',
+            );
+
+            Shipping shipping = Shipping(
+              firstName: name.text,
+              lastName: "",
+              address1: address.text,
+              city: city.text,
+              state: state.text,
+              postcode: postcode.text,
+              country: country.text,
+              email: email.text,
+              phone: phone.text,
+              address2: '',
+            );
+
+            bool check =
+            await placeOrder(method, title, billing, shipping,true);
+
+            if (check) {
+              Fluttertoast.showToast(msg: 'Order is successfully placed');
+              Navigator.of(context).pushReplacement(
+                MaterialPageRoute(builder: (_) => HomeScreen()),
+              );
+            } else {
+              Fluttertoast.showToast(msg: 'Order is Placed Successfully');
+            }
+          },
+          onError: (e) {
+            print("Error: $e");
+            Fluttertoast.showToast(
+              msg: 'Failed to place the order. Please try again.',
+            );
+          },
+          onCancel: () {
+            print("Cancelled");
+          },
+        );
       }
     },
     child: Container(
@@ -82,4 +173,8 @@ InkWell PaymentMethod(
       ),
     ),
   );
+}
+
+bool _areTextControllersEmpty(List<TextEditingController> controllers) {
+  return controllers.any((controller) => controller.text.isEmpty);
 }

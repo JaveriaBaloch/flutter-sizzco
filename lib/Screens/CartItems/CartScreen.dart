@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:sizzco/Screens/CartItems/checkout.dart';
+import 'package:sizzco/Screens/CartItems/stripecheckout.dart';
+import 'package:sizzco/Screens/CartItems/select_payment_method.dart';
 import 'package:sizzco/Screens/Login/user_login.dart';
 import 'package:sizzco/Utilies/colors.dart';
 import 'package:sizzco/widgets/primaryText.dart';
@@ -121,7 +122,7 @@ class _CartScreenState extends State<CartScreen> {
 
                                   Navigator.of(context).pushReplacement(
                                       MaterialPageRoute(
-                                          builder: (_) => CheckoutScreen()));
+                                          builder: (_) => SelectPaymentMethod()));
                                   //
                                   // Fluttertoast.showToast(
                                   //     msg: 'Please Login First');
