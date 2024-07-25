@@ -1,25 +1,40 @@
-# sizzco
-
+# Sizzco
 A new Flutter project.
 
 ## Getting Started
-
 This project is a starting point for a Flutter application.
 
-## Update Config.dart file links and keys,  like:
+## Prerequisites
+Before you begin, ensure you have met the following requirements:
+
+- You have installed the latest version of Flutter.
+- You have a compatible IDE such as Android Studio or Visual Studio Code.
+
+
+## Installation
+- Clone the repository:
+  ```bash
+  git@github.com:JaveriaBaloch/flutter-sizzco.git
+   ```
+- Navigate to the project directory:
+  ```bash
+  cd flutter-sizzco
+  ```
+- Install dependencies:
+  run this command in cmd:
+  ```bash
+  flutter pub get
+  ```
+## Configuration
+Update the Config.dart file with your specific links and keys:
+
 - customer_key
 - customer_secret
-- weblike 
+- weblike
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on
-mobile development, and a full API reference.
-
-# sizzco
-
-# sizzco
+## Running the Application
+- To run the application, use the following command:
+  ```bash
+  flutter run
+  ```
